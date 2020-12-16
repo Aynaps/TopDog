@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+
+html, body {
+    min-height: 100%;
+}
+  
+.splitScreen {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+}
+  
+.leftHalf {
+    display: flex;
+    flex-direction: row;
+    min-height: 800px;
+    width: 50%;
+    background-color:	#a4c2f4;
+}
+  
+.rightHalf {
+    display: flex;
+    flex-direction: column;
+    min-height: 650px;
+    width: 50%;
+    background-color: white;
+}
+  
+.title {
+    padding-top: 60px;
+    color: #a4c2f4;
+    font-family: Pacifico;
+    text-align: center;
+    font-size: 80px;
+}
+  
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+}
+  
+.button {
+    align-self: center;
+    border-radius: 15px;
+    height: 70px;
+    width: 230px;
+    background-color:lightgrey;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Comfortaa;
+}
+  
+#signUpBtn {
+    background-color: #cfe2f3;
+}
+  
+#loginBtn {
+    margin-top: 10px;
+    background-color: #9fc5e8;
+}
+
+.txtContainer {
+    margin-top: 15%;
+    width: 80%;
+}
+
+.imgContainer {
+    margin-top: 20%;
+}
+
+.adText {
+    margin-top: 15%;
+    margin-left: 30%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Comfortaa;
+}
+
+.dogIcon {
+    margin-top: 35%;
+    margin-left: 150%;
+    height: 70px;
+    width: 70px;
+}
