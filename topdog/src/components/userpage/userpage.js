@@ -14,15 +14,17 @@ export default function UserPage() {
                 
                 <div className="searchbar-container">
                     <input type="text" placeholder="Search.."></input>
-                    <p>Hamburger Menu</p>    
+                    <img src="menu.png" alt="Menu"></img> 
                 </div>
+                
                 
             </div>
 
             <div className="userInfo">
                 <img src="stockphoto.jpg" height="150px" width="150px" margin="10px"></img>
-                <p>their @</p>
-                <p>header</p>
+                    <p className="name">Name</p>
+                    <p className="username">@username</p>
+                <p>bio</p>
                 <p> <b>#num</b> posts  <b>#num</b> followers  <b>#num</b> following</p>
             </div>
 

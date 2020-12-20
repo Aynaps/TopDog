@@ -26,6 +26,7 @@
 .Title {
     text-decoration: none;
     font-family: Pacifico;
+    color:black;
     font-size: xx-large;
 }
 
@@ -37,7 +38,17 @@
 }
 
 .searchbar-container input{
-    height: 35px;
+    align-self: center;
+    margin-right: 20px;
+    height: 25px;
+    width: 200px;
+}
+
+.searchbar-container img {
+    align-self: center;
+    margin-right: 10px;
+    height: 30px;
+    width: 40px;
 }
 
 .userInfo{
@@ -45,9 +56,26 @@
     width: fit-content;
     align-self: center;
     text-align: center;
+    font-family: Comfortaa;
+}
+
+.userInfo img {
+    margin-top: 20px;
+    border-radius: 75px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.username {
+    margin-top: -15px;
+    font-size: 12px;
 }
 
 .userpagebody > .userPosts{
     flex: 1 1 auto;
     background-color: red;
 }
+
