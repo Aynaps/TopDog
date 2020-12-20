@@ -1,0 +1,53 @@
+.userpagebody {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #a4c2f4;
+    width: 100%;
+    text-align: center;
+}
+
+
+.titleContainer{
+    position: absolute;
+    text-align: center;
+    align-self: center;
+
+}
+
+.navbar img{
+    height: 70px;
+    width: 70px;
+}
+
+.Title {
+    text-decoration: none;
+    font-family: Pacifico;
+    font-size: xx-large;
+}
+
+.searchbar-container{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.searchbar-container input{
+    height: 35px;
+}
+
+.userInfo{
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+}
+
+.userpagebody > .userPosts{
+    flex: 1 1 auto;
+    background-color: red;
+}
