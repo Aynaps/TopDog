@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect
+} from "react-router-dom";
+
+import UserPage from './components/userpage/userpage';
+import LoginScreenInitial from './components/loginscreen/LoginScreenInitial';
+import LoginScreenLogin from './components/loginscreen/LoginScreenLogin';
+import LoginScreenSignUp from './components/loginscreen/LoginScreenSignUp';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Route exact path="/" component={LoginScreenInitial} />
+    <Route exact path="/login" component={LoginScreenLogin} />
+    <Route exact path="/signup" component={LoginScreenSignUp} />
+    <Route exact path="/userprofile" component={UserPage} />
+  </Router>,
   document.getElementById('root')
 );
 

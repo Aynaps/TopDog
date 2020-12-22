@@ -1,4 +1,5 @@
 import './loginScreen.css';
+import { Link } from "react-router-dom";
 
 function LoginScreenInitial() {
   return (
@@ -34,8 +35,12 @@ function LoginScreenInitial() {
           </h1>
         </div>
         <div className="btnContainer">
-          <button className="button" id="signUpBtn">Sign Up</button>
-          <button className="button" id="loginBtn">Login</button>
+          <Link to="/signup" className="link">
+            <button className="button" id="signUpBtn">Sign Up</button>
+          </Link>
+          <Link to="/login" className="link">
+            <button className="button" id="loginBtn">Login</button>
+          </Link>
         </div>
       </div>
     </div>

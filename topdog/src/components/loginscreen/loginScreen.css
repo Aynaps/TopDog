@@ -28,11 +28,11 @@ html, body {
 }
   
 .title {
-    padding-top: 60px;
+    padding-top: 30px;
     color: #a4c2f4;
     font-family: Pacifico;
     text-align: center;
-    font-size: 80px;
+    font-size: 90px;
 }
   
 .btnContainer {
@@ -51,6 +51,10 @@ html, body {
     font-family: Comfortaa;
 }
   
+.link {
+    align-self: center;
+}
+
 #signUpBtn {
     background-color: #cfe2f3;
 }
@@ -83,4 +87,76 @@ html, body {
     margin-left: 150%;
     height: 70px;
     width: 70px;
+}
+
+#forgotPasswordLink {
+    align-self: center;
+    margin-left: 190px;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Comfortaa;
+}
+
+.loginInput {
+    align-self: center;
+    margin-top: 5px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Comfortaa;
+    color: black;
+    background-color: #f3f3f3;
+    height: 40px;
+    width: 300px;
+}
+
+.signUpInput {
+    align-self: center;
+    margin-top: -5px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Comfortaa;
+    color: black;
+    background-color: #f3f3f3;
+    height: 40px;
+    width: 300px;
+}
+
+.buttonContainer {
+    align-self: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.loginButtons {
+    align-self: center;
+    margin: 5px;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    background-color:lightgrey;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Comfortaa;
+}
+
+#loginConfirmBtn {
+    background-color: #9fc5e8;
+}
+
+.signUp {
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signUpInstructions {
+    padding-left: 165px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Comfortaa;
+    color:#3c78d8;
 }
