@@ -5,7 +5,7 @@ import UserPage from './components/userpage/userpage';
 export default function App() {
   return (
     // <LoginScreenInitial/>
-    <UserPage/>
+     <UserPage/>
   );
 }
 

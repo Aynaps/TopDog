@@ -1,7 +1,7 @@
 import './loginScreen.css';
 import { Link } from "react-router-dom";
 
-function LoginScreenInitial() {
+function LoginScreenSignUp() {
   return (
     <div className="splitScreen">
       <div className="leftHalf">
@@ -34,17 +34,25 @@ function LoginScreenInitial() {
             TopDog
           </h1>
         </div>
-        <div className="btnContainer">
-          <Link to="/signup" className="link">
-            <button className="button" id="signUpBtn">Sign Up</button>
-          </Link>
-          <Link to="/login" className="link">
-            <button className="button" id="loginBtn">Login</button>
-          </Link>
+        <div className="signUp">
+          <p className="signUpInstructions">Create a new username:</p>
+          <input type="text" placeholder="Username" className="signUpInput"></input>
+          <p className="signUpInstructions">Choose a password:</p>
+          <input type="text" placeholder="Password" className="signUpInput"></input>
+          <p className="signUpInstructions">Confirm password:</p>
+          <input type="text" placeholder="Confirm Password" className="signUpInput"></input>
+          <div className="buttonContainer">
+            <Link to="/" className="link">
+              <button className="loginButtons" id="backBtn">Back</button>
+            </Link>
+            <Link to="/userprofile" className="link">
+              <button className="loginButtons" id="loginConfirmBtn">Sign Up</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default LoginScreenInitial;
+export default LoginScreenSignUp;
