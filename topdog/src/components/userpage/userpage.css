@@ -2,6 +2,12 @@
     display: flex;
     flex-flow: column nowrap;
 }
+
+.userPageHeader {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -10,12 +16,10 @@
     text-align: center;
 }
 
-
 .titleContainer{
     position: absolute;
     text-align: center;
     align-self: center;
-
 }
 
 .navbar img{
@@ -38,10 +42,12 @@
 }
 
 .searchbar-container input{
+    font-family: Comfortaa;
     align-self: center;
     margin-right: 20px;
-    height: 25px;
-    width: 200px;
+    border-radius: 75px;
+    height: 30px;
+    width: 210px;
 }
 
 .searchbar-container img {
