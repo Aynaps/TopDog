@@ -10,7 +10,7 @@ export default function UserPage() {
     const node = useRef();
     useOnClickOutside(node, () => setOpen(false));
     return (
-        <div>
+        <div className="maindiv">
             <Header/>
             <div className="userpage">
                 <div className="userpagebody">
