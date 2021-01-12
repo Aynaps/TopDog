@@ -1,4 +1,5 @@
 import './userpage.css';
+import Header from '../header/header';
 import React, { useState , useRef } from 'react';
 import { useOnClickOutside } from '../../hooks';
 import Burger from '../burger/Burger';
@@ -10,23 +11,8 @@ export default function UserPage() {
     useOnClickOutside(node, () => setOpen(false));
     return (
         <div>
-            <header className="userPageHeader">
-                <div className="titleContainer">
-                    <a href= "/" className="Title">TopDog</a>
-                </div>
-
-                <div className="navbar">
-                    <img src="dog.png" alt="Doggo"></img>
-                        
-                    <div className="searchbar-container" ref={node}>
-                        <input type="text" placeholder="Search.."></input>
-                        <Burger open={open} setOpen={setOpen}/>
-                        <Menu open={open} setOpen={setOpen}/>
-                    </div>        
-                </div>
-            </header>
+            <Header/>
             <div className="userpage">
-
                 <div className="userpagebody">
 
                     <div className="userInfo">

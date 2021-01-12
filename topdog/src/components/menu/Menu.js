@@ -7,7 +7,7 @@ const Menu = ({ open }) => {
         <a href="/">Home</a>
         <a href="/userprofile">Profile</a>
         <a href="/">Settings</a>
-        <a href="/">About TopDog</a>
+        <a href="/about">About TopDog</a>
         <a href="/">Contact Us</a>
         <a href="/">Logout</a>
     </StyledMenu>
