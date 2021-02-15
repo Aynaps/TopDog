@@ -1,6 +1,7 @@
 import './loginScreen.css';
-import { Link } from "react-router-dom";
+import { Link, Switch, Route } from "react-router-dom";
 import Footer from '../footer/footer';
+import LoginScreenSignUp from './LoginScreenSignUp';
 
 function LoginScreenInitial() {
   return (
@@ -36,6 +37,7 @@ function LoginScreenInitial() {
               TopDog
             </h1>
           </div>
+          
           <div className="btnContainer">
             <Link to="/signup" className="link">
               <button className="button" id="signUpBtn">Sign Up</button>
@@ -47,7 +49,15 @@ function LoginScreenInitial() {
         </div>
       </div>
       <Footer/>
+
+    <Switch>
+      <Route path="/signup">
+        <LoginScreenSignUp/>
+      </Route>
+    </Switch>
+    
     </div>
+
   );
 }
 
