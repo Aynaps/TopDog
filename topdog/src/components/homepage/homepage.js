@@ -21,20 +21,15 @@ function HomePage() {
         });
     }, [])
 
-
-    console.log(images)
-    var title = <h2>HomePage</h2>
-    //connect to firebase storage
-    //const asdf = GetImagesFromDB();
-
-    //console.log(asdf)
-
     return (
         //output something from backend here
-        <Header/>,
-        <div className="imageContainer">
-            {images.map((imgURL) => {return <img src={imgURL} height="150" width="150"></img> })}
+        <div className="mainDiv">
+            <Header/>
+            <div className="imageContainer">
+                {images.map((imgURL) => {return <img src={imgURL} height="150" width="150"></img> })}
+            </div>
         </div>
+        
         
     );
 }
