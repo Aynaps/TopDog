@@ -7,6 +7,7 @@ import Menu from '../menu/Menu';
 export default function Header() {
     const [open, setOpen] = useState(false);
     const node = useRef();
+    
     useOnClickOutside(node, () => setOpen(false));
     return (
         <header className="userPageHeader">

@@ -1,4 +1,5 @@
 import './homepage.css';
+import Header from '../header/header';
 import axios from 'axios';
 import firebase from 'firebase/app';
 import React, { useEffect, useState } from 'react';
@@ -30,8 +31,9 @@ function HomePage() {
 
     return (
         //output something from backend here
+        <Header/>,
         <div className="imageContainer">
-            {images.map((imgURL) => {return <img src={imgURL}></img> })}
+            {images.map((imgURL) => {return <img src={imgURL} height="150" width="150"></img> })}
         </div>
         
     );
