@@ -1,46 +1,43 @@
 import './homepage.css';
 import axios from 'axios';
+import firebase from 'firebase/app';
 import React, { useEffect, useState } from 'react';
 
-export default function HomePage() {
+function HomePage() {
+    //generate homefeed(images) on mount
     
+    const [images, addImage] = useState([]);
 
-    const [firstNames, setFirstNames] = useState([])
-    const [lastNames, setLastNames] = useState([])
-
-    //connect to backend
-    
-    var title = <h2>HomePage</h2>
-
-
-    // useEffect(() => {
-    //     fetch("api/accounts/greet")
-    //         .then(response => response.json())
-    //         .then(json => {
-    //             setLastNames(prevState => prevState.concat(json))
-                
-    //         })
-    //         .catch(error => console.log(error))
-    //     }, []);
-        
     useEffect(() => {
-        axios.get(`http://localhost:8080/api/accounts/greet`)
-            .then(res => {
-                console.log(res)
-            })
-            .catch(error => console.log(error))
-        }, []);
-    console.log(lastNames)
+        const storageRef = firebase.storage().ref();
 
+        storageRef.listAll().then(bucket => {
+            bucket.items.forEach(img => {
+                img.getDownloadURL()
+                .then(url => {addImage(oldArray => [...oldArray, url])})
+                .catch(err => console.log(err));
+            })
+        });
+    }, [])
+
+
+    console.log(images)
+    var title = <h2>HomePage</h2>
+    //connect to firebase storage
+    //const asdf = GetImagesFromDB();
+
+    //console.log(asdf)
 
     return (
         //output something from backend here
-        <div>
+        <div className="imageContainer">
+            {images.map((imgURL) => {return <img src={imgURL}></img> })}
         </div>
         
     );
 }
 
+export default HomePage;
 
 
 

@@ -1,17 +1,15 @@
 import './App.css';
-import LoginScreenInitial from './components/loginscreen/LoginScreenInitial';
 import UserPage from './components/userpage/userpage';
+import HomePage from './components/homepage/homepage'
 
 export default function App() {
   return (
-    <LoginScreenInitial/>
+    // <LoginScreenInitial/>
     //  <UserPage/>
+    <HomePage/>
   );
 }
 
 
-function About() {
-  return <h2>About</h2>;
-}
 
 
